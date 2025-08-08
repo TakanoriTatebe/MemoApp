@@ -8,7 +8,6 @@ import {
 
 import { Link, router } from "expo-router";
 
-import Header from "../../components/Header";
 import Button from "../../components/Button";
 
 const handlePress = (): void => {
@@ -19,7 +18,6 @@ const handlePress = (): void => {
 const SignUp = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Header />
       <View style={styles.inner}>
         <Text style={styles.title}>Sign Up</Text>
         <TextInput style={styles.input} value="Email address"></TextInput>
