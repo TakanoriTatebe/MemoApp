@@ -48,7 +48,7 @@ const LogIn = (): JSX.Element => {
         <Button label="Submit" onPress={handlePress} />
         <View style={styles.footer}>
           <TouchableOpacity>
-            <Text style={styles.footerText}>Not registered??</Text>
+            <Text style={styles.footerText}>Not registered?</Text>
           </TouchableOpacity>
           <Link href="auth/sign_up" asChild>
             <TouchableOpacity>
