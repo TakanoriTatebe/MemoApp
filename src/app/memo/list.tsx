@@ -9,7 +9,7 @@ import CircleButton from "../../components/CircleButton";
 import Icon from "../../components/Icon";
 import LogOutButton from "../../components/LogOutButton";
 import { db, auth } from "../../config";
-import { type Memo } from "../../types/memo";
+import { type Memo } from "../../../types/memo";
 
 const handlePress = (): void => {
   router.push("/memo/create");
@@ -34,7 +34,6 @@ const List = (): JSX.Element => {
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const remoteMemos: Memo[] = [];
       snapshot.forEach((doc) => {
-        console.log("memo", doc.data());
         const { bodyText, updatedAt } = doc.data();
         remoteMemos.push({
           id: doc.id,
